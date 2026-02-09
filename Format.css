@@ -1,0 +1,17 @@
+#Edus{
+	text-align:center;
+	color:black;
+}
+
+table{
+	border:0.1px solid ;
+	width:100%;
+	height:1000px;
+}
+#logo{
+	top-margin=0;
+	text-align:left;
+	height:500px;
+	color:white;
+	
+}

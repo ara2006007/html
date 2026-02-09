@@ -1,0 +1,123 @@
+<html> 
+<head>
+    <style>
+	
+    .profile {
+        border-radius: 50%;
+        width:50px;
+        height: 50px;
+		object-fit: cover;
+    }
+	.profile:hover{
+	width:100px;
+        height: 100px;
+	}
+    table {
+       border-collapse: collapse;
+       width: 100%;
+	   height:60%;
+		text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 15px;
+			border-bottom: 1px solid #ddd
+			
+    }
+	  .add-box{
+         text-align: right;
+            margin-top: 20px;
+            display: block;
+    }
+	.add_text{
+	background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+	
+	}
+	th{
+	 background-color: #f4f4f4;
+	
+	}
+	th,td{
+	border-bottom: 1px solid #ddd;
+	border-right:  none;
+	border-left:none;
+	}
+	
+	tr:hover{
+		background-color: #f1f1f1;
+		font-size:20px;
+	}
+    </style>
+    <title>Student table</title>
+</head>
+<body>
+<div class="add-box">
+<a href="form.html" target="display" class="add_text">Add student</a>
+</div>
+<br>
+
+    <table border="1px" width="100%">
+	<form action="view.html" method="get">
+       <tr>
+        <th>Profile</th>
+        <th>ID</th>
+        <th>Student name</th>
+        <th>Date of birth</th>
+        <th>Course</th>
+        <th>grade  </th> 
+        <th>Payment  </th>
+		<th>Actions  </th>
+       </tr>
+       <tr >
+        <td><img class="profile" src="profile.png" alt="Student Image" ></td>
+        <td>28098</td>
+        <td>S.Aradanan</td>
+        <td>2000-05-15</td>
+        <td>Java</td>
+        <td>A+</td>
+        <td>paid  </td>
+		<td><input type="submit" value="view">
+		<input type="submit" value="edit"></td>
+       </tr>
+       <tr >
+        <td><img class="profile" src="profile.png" alt="Student Image" ></td>
+        <td>28097</td>
+        <td>S.Ashwin</td>
+        <td>2006-05-15</td>
+        <td>Full Stack</td>
+        <td>B+</td>
+        <td>paid  </td>
+		<td><input type="submit" value="view">
+		<input type="submit" value="edit"></td>
+       </tr>
+       <tr >
+        <td><img class="profile" src="female.png" alt="Student Image" ></td>
+        <td>28100</td>
+        <td>S.Dhivya</td>
+        <td>2007-05-12</td>
+        <td>Java</td>
+        <td>A+</td>
+        <td>paid  </td>
+		<td><input type="submit" value="view">
+		<input type="submit" value="edit"></td>
+       </tr>
+       <tr >
+        <td><img class="profile" src="female.png" alt="Student Image" ></td>
+        <td>28101</td>
+        <td>S.Meenu</td>
+        <td>2007-02-28</td>
+        <td>C#</td>
+        <td style="color:red;">Fail</td>
+        <td>not paid  </td>
+		<td><input type="submit" value="view">
+		<input type="submit" value="edit"></td>
+       </tr>
+	   </form>
+    </table>
+	
+</body>

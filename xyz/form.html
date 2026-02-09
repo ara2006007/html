@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <style>
+            table{
+                width:600px;
+				height:100%;	
+				 background: white;
+                
+                border-collapse: collapse; 
+                border-spacing: 10px; 
+                border-radius: 20px;
+                margin-bottom:10px;
+				
+                
+                padding: 20px;
+				overflow:hidden;
+				
+				
+				
+				margin-left : auto;
+				margin-right : auto;
+				margin-top : 1px;
+				
+				
+				box-shadow: 0px 4px 10px rgba(0,0,0,0.1); 
+            }
+			tr{
+			border-bottom :1px solid #ddd;
+			}
+            th{
+                text-align: center;
+                font-size: 20px;
+            }
+            td{
+                text-align: center;
+            }
+            .Round{
+                border-radius: 10px;
+                padding: 5px;
+            }
+			.Header{
+			background-color: #2848D7;
+			border-bottom-color: coral;
+			
+			}
+			#sub{
+			background-color:green;
+			color:white;
+			border:none;
+			font-size:20px;
+			margin-right:20px;
+			
+			
+			}
+			body{
+ background-color:#94BFFF;
+
+}
+			#res{
+			background-color:red;
+			color:white;
+			border:none;
+			font-size:20px;
+			}
+			
+        </style>
+        <title>Student form</title>
+    </head>
+    <body>
+	<form action="table.html" method="get">
+        <table>
+		
+            <tr  class="Header">
+                <th  colspan="2"><b>Student Registration Form</b></th>
+            </tr>
+            <tr>
+                <td><label>First name:</label><br>
+                <input type="text" name="firstname" class="Round" required></td>
+                </td><br>
+                <td><label>Last name:</label><br>
+                <input type="text" name="lastname" class="Round" required></td>
+                </td>
+            </tr>
+             <tr>
+                <td><label>Grade:</label><br>
+                <input type="text" name="grade" class="Round" required></td>
+                </td>
+                <td><label>Age:</label><br>
+                <input type="number" name="age" class="Round" required></td>
+                </td>
+            </tr>
+             <tr>
+                <td><label>Course:</label><br>
+                    <select name="course" class="Round" required><br>
+                         <option value="none">Selected course</option>
+                        <option value="Java">Java</option>
+                        <option value="Full Stack">Full Stack</option>
+                        <option value="C#">C#</option>
+                        <option value="Python">Python</option>
+       
+                </td>
+                <td><label>Gender:</label><br>
+                <input type="radio" name="gender" value="male" class="Round" > Male
+                <input type="radio" name="gender" value="female" > Female</td>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Payment:</label><br>
+                <input type="file" name="payment" class="Round" required></td>
+                <td><label>Profile picture :</label><br>
+                <input type="file" name="profilepicture" required></td>
+
+                
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit" class="Round" id="sub" />
+                    <input type="reset" value="Reset" class="Round" id="res">
+                </td>
+            </tr>
+			
+        </table>
+		</form>
+    </body>
+</html>

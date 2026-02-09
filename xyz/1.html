@@ -1,0 +1,106 @@
+<html>
+<head>
+<style>
+.Main{
+  margin: 100px auto 0;
+  width: fit-content;
+}
+body{
+  background-color:#94BFFF;
+}
+
+.profile{
+  border-radius: 50%;
+  width:80px;
+  height:80px;
+  object-fit: cover;
+  display:block;
+  margin: 0 auto;
+  border:2px solid white;
+}
+
+table{
+  margin-top:20px;
+  border-collapse:collapse;
+  border-radius:20px;
+  background: white;
+  border:1px solid black;
+  overflow:hidden;
+}
+
+tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+th{
+  text-align:left;
+}
+
+th,td{
+  border-bottom: 1px solid #ddd;
+  padding: 20px 80px;
+  text-align:center;
+}
+
+.image{
+  text-align:center;
+  vertical-align:middle;
+}
+
+/* ✅ hover effect for each detail row */
+#details tr:hover{
+  background-color:#dde9ff;
+  cursor:pointer;
+}
+</style>
+
+<title>view student</title>
+</head>
+
+<body>
+<div class="Main">
+  <table>
+    <tr>
+      <th colspan="2" style="text-align:left;">
+        Edus Online Academy<br>
+        Student Details
+      </th>
+    </tr>
+
+    <tr>
+      <th class="image" colspan="2">
+        <img class="profile" src="profile.png" alt="profile">
+      </th>
+    </tr>
+
+    <tbody id="details">
+      <tr>
+        <th>Name</th>
+        <td>S.Aradanan</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>19</td>
+      </tr>
+      <tr>
+        <th>School</th>
+        <td>Jhc</td>
+      </tr>
+      <tr>
+        <th>Course</th>
+        <td>Full stack</td>
+      </tr>
+      <tr>
+        <th>Address</th>
+        <td>71/31A, Arasady road, Jaffna</td>
+      </tr>
+      <tr>
+        <th>Fees</th>
+        <td style="color:green;">Paid</td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>
+</body>
+</html>
