@@ -1,0 +1,110 @@
+<html>
+<head>
+  <title>Admin Portal</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      margin:0;
+      background:#f4f7fb;
+    }
+
+    marquee{
+      background-color:#088395;
+      color:white;
+      padding:10px 0;
+    }
+    marquee h1{
+      margin:0;
+      color:white;
+      font-size:28px;
+    }
+
+    .tag{
+      max-width:900px;
+      margin:15px auto;
+      padding:15px 20px;
+      background:white;
+      border-radius:14px;
+      border:1px solid #e6e6e6;
+      color:#2b6f6f;
+      font-weight:600;
+      text-align:center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+    .tag p{
+      margin:0;
+      font-size:16px;
+      line-height:1.5;
+    }
+
+    .cards-wrap{
+      max-width:900px;
+      margin:20px auto;
+      display:flex;
+      gap:15px;
+      justify-content:center;
+      flex-wrap:wrap;
+      padding: 0 12px;
+    }
+
+    .cards{
+      width:250px;
+      background:white;
+      border:1px solid #e6e6e6;
+      border-radius:16px;
+      padding:18px;
+      text-align:center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: 0.2s;
+    }
+    .cards:hover{
+      transform: translateY(-5px);
+    }
+
+    .cards img{
+      width:60px;
+      height:60px;
+      object-fit:contain;
+      margin-bottom:10px;
+    }
+
+    .cards p{
+      margin:0;
+      color:#333;
+      font-size:15px;
+      line-height:1.4;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <marquee><h1>Welcome to Edus Students Portal</h1></marquee>
+
+    <div class="tag">
+      <p>We are a next-gen education system, mainly focused on student benefits.</p>
+    </div>
+
+    <div class="cards-wrap">
+      <div class="cards">
+        <img src="student.png" alt="students">
+        <p>We have trained over 600+ students.</p>
+      </div>
+
+      <div class="cards">
+        <img src="student.png" alt="students">
+        <p>Smart learning, clear progress tracking, and strong support.</p>
+      </div>
+
+      <div class="cards">
+        <img src="student.png" alt="students">
+        <p>Quality content + exams + guidance — everything in one place.</p>
+      </div>
+    </div>
+  </header>
+</body>
+</html>

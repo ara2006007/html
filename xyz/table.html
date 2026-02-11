@@ -30,7 +30,7 @@
             display: block;
     }
 	.add_text{
-	background-color: #28a745;
+	background-color: #088395;
             color: white;
             padding: 10px;
             border-radius: 5px;
@@ -51,6 +51,36 @@
 	tr:hover{
 		background-color: #f1f1f1;
 		font-size:20px;
+	}
+	
+	.sub{
+	background-color:#08957B;
+		border:none;
+		border-radius:10px;
+		font-size:20px;
+		color:white;
+		font-family: inherit;
+		padding:5px;
+	}
+	.sub:hover{
+	font-size:15px;
+
+	
+	}
+	
+	.edit{
+	background-color:#3C8ECA;
+	border:none;
+	border-radius:10px;
+		font-size:20px;
+		color:white;
+		font-family: inherit;
+		padding:5px;
+	}
+	}
+	.edit:hover{
+	font-size:10px;
+	
 	}
     </style>
     <title>Student table</title>
@@ -81,8 +111,8 @@
         <td>Java</td>
         <td>A+</td>
         <td>paid  </td>
-		<td><input type="submit" value="view">
-		<input type="submit" value="edit"></td>
+		<td><input class="sub" type="submit" value="view">
+		<input class="edit" type="submit" value="edit"></td>
        </tr>
        <tr >
         <td><img class="profile" src="profile.png" alt="Student Image" ></td>
@@ -92,8 +122,8 @@
         <td>Full Stack</td>
         <td>B+</td>
         <td>paid  </td>
-		<td><input type="submit" value="view">
-		<input type="submit" value="edit"></td>
+		<td><input class="sub" type="submit" value="view">
+		<input class="edit" type="submit" value="edit"></td>
        </tr>
        <tr >
         <td><img class="profile" src="female.png" alt="Student Image" ></td>
@@ -103,8 +133,8 @@
         <td>Java</td>
         <td>A+</td>
         <td>paid  </td>
-		<td><input type="submit" value="view">
-		<input type="submit" value="edit"></td>
+		<td><input class="sub" type="submit" value="view">
+		<input class="edit" type="submit" value="edit"></td>
        </tr>
        <tr >
         <td><img class="profile" src="female.png" alt="Student Image" ></td>
@@ -114,8 +144,8 @@
         <td>C#</td>
         <td style="color:red;">Fail</td>
         <td>not paid  </td>
-		<td><input type="submit" value="view">
-		<input type="submit" value="edit"></td>
+		<td><input  class="sub" type="submit" value="view">
+		<input class="edit" type="reset" value="edit"></td>
        </tr>
 	   </form>
     </table>

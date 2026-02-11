@@ -2,8 +2,48 @@
     <head>
 	<style>
 	marquee{
-	background-color:blue;
+	background-color:#088395;
+	color:white;
 	
+	
+	}
+		.tag{
+  color:#7AB2B2;
+  width:80%;
+  font-weight:600;
+  background:white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border:1px solid #ddd;
+  border-radius:20px;
+
+  margin-top:20px;
+
+  height:40px;            
+  padding:0 12px;         
+
+  display:flex;
+  align-items:center;     
+  justify-content:center; 
+  text-align:center;
+}
+	.cards{
+	display:inline-block;
+	margin:10px;
+	width:250px;
+	max-height:20px
+	border:1px solid #ddd;
+	 box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+	 border-radius:10px;
+	
+	}
+	.logo{
+	text-align:center;
+	margin-top:10px;
+	    object-fit:contain;
+	}
+	.main{
+	text-align:center;
+	padding-top:20px;
 	}
 	
 	
@@ -14,13 +54,29 @@
     </head>
     <body>
 	<header>
-          <marquee><h1>Welcome to edus Students portal</h1></marquee>	
+          <marquee><h1 color="white">Welcome to edus Students portal</h1></marquee>	
 		  <center>
-		  <h3><p>We are next gen education system , Mainly foucus on the benifits of students </p></h3>
+		  <div class="tag">
+		  <h3><p>We are next gen education system , Mainly foucus on the benifits of students   </p></h3>
+		  </div>
 		 </center>
-		 <div>
-			<img src="1.png" width="100%" height="100%">
+		 <div class="main">
+			<div class="cards">
+			<img src="student.png" width="60px" class="logo">
+			<p> We had trained over 600+ studets , They shine now like a start</p>
+			</div>
+			<div class="cards">
+			<img src="student.png" width="60px" class="logo">
+			<p>Smart learning, clear progress tracking, and strong support.</p>
+			</div>
+			<div class="cards">
+			<img src="student.png" width="60px" class="logo">
+			<p> Quality content + exams + guidance — everything in one place.</p>
+			</div>
 		 </div>
+		 <video  autoplay muted width="100%" height="400" loop >
+  <source src="1.mp4" type="video/mp4">
+  </video>
 		  
 	</header>
     </body>
